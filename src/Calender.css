@@ -1,0 +1,134 @@
+/* カレンダーコンテナを画面いっぱいに広げる */
+.calendar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #f0f0f0; /* 背景色の変更 */
+    margin: 0;
+    padding: 0;
+}
+
+/* カレンダーを画面いっぱいに拡大 */
+.full-screen-calendar {
+    width: 100%; /* 最大幅を設定 */
+    height: 100vh;
+    border-radius: 10px; /* 角を丸くする */
+    background-color: white; /* カレンダーの背景色 */
+}
+
+.react-calendar__navigation {
+    height: 7vh;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+    padding: 0;
+}
+
+.react-calendar__navigation__arrow  {
+    font-size: 3vmin!important;
+}
+
+.react-calendar__month-view__weekdays {
+    height: 5vh;
+    line-height: 5vh;
+    font-size: 2vmin;
+}
+
+/* カレンダーの各日付セルのデザインを変更 */
+.full-screen-calendar .react-calendar__tile {
+    position: relative; /* リンクを日付セルに合わせて配置 */
+    padding: 0; /* タイルのパディングを削除 */
+    height: 14vh;
+    font-size: 2vmin;
+    display: flex;
+    justify-content: center; /* 中央揃えのままにする */
+    align-items: flex-start; /* 日付を上に配置する */
+    padding-top: 5px; /* 日付を上に少し余白をつける */
+}
+
+
+
+.react-calendar__viewContainer {
+    height: 90vh;
+}
+
+/* カレンダーの日付が選択された時のスタイル */
+.full-screen-calendar .react-calendar__tile--active {
+    background-color: gray;
+    color: white;
+}
+
+
+/* マークのスタイル */
+.mark_task, .mark_schedule {
+    border-radius: 50%; /* 丸いマーク */
+    width: 2vw;
+    height: 3vh;
+    line-height: 3vh;
+}
+
+/* タスクがある日には赤いマーク */
+.mark_task {
+    /* background-color: red; */
+
+}
+
+/* スケジュールがある日には青いマーク */
+.mark_schedule {
+    /* background-color: blue; */
+}
+
+/* マークを横に並べるためのスタイル */
+.date-content {
+    flex-direction: column; /* 上下に配置 */
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    flex-direction: row; /* マークを横に並べる */
+
+}
+
+
+
+.react-calendar__tile--active:enabled:hover {
+    background-color: gray;
+}
+
+/* リンクを日付セル全体に広げる */
+.date-link {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none; /* リンクの下線を消す */
+    color: inherit; /* テキストの色をそのままにする */
+    position: absolute; /* リンクをセル全体に広げる */
+    top: 0;
+    left: 0;
+}
+
+/* リンク内のコンテンツを中央に配置 */
+.date-content {
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    padding-top: 4vh;
+    width: 100%;
+}
+
+.task-band {
+    background-color: rgba(255, 165, 0, 0.5); /* 半透明のオレンジ色 */
+    height: 4vh;
+    width: 100%;
+    line-height: 4vh;
+}
+
+.schedule-band {
+    background-color: rgba(255, 165, 0, 0.5); /* 半透明のオレンジ色 */
+    height: 4vh;
+    width: 100%;
+    line-height: 4vh;
+    overflow: hidden;
+}

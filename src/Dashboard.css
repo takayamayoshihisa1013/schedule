@@ -1,0 +1,14 @@
+
+
+.dashboard {
+    background-color: #FFFF;
+    width: 96%;
+    height: 90vh;
+    margin: 2.5vh 1%;
+    padding: 2.5vh 1%;
+    border-radius: 10px;
+}
+
+main h1 {
+    font-size: 4vmin;
+}

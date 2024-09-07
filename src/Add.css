@@ -1,0 +1,114 @@
+.add_page {
+    background-color: #FFFF;
+    width: 98%;
+    padding: 1vh 1%;
+    height: 98vh;
+    
+    overflow: hidden;
+}
+
+.add_page .select_form {
+    width: 40%;
+    margin: 0 auto;
+    height: 8vh;
+    line-height: 8vh;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.add_page .select_form h3 {
+
+}
+
+.add_page .form_zone {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+}
+
+.add_page form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 85vh;
+    transition: transform 0.5s ease;
+    margin: 0 23%;
+    padding: 2.5vh 2.5%;
+    /* box-shadow: 5px 4px 10px 3px gray; */
+    border-radius: 10px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.add_page form div {
+    font-size: 2.3vmin;
+    margin-top: 2vh;
+}
+
+.add_page form div input {
+    display: block;
+    width: 100%;
+    height: 5vh;
+    font-size: 2.5vmin;
+    margin-top: 1vh;
+}
+
+.add_page form div textarea {
+    /* width: 100%; */
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 15vh;
+    margin-top: 1vh;
+}
+
+.add_page form div .date_time {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1vh;
+}
+
+.add_page form div .date_time input {
+    display: block;
+    width: 48%;
+    /* margin: 0 auto; */
+}
+
+.add_page form div select {
+    width: 100%;
+    display: block;
+    height: 5vh;
+    font-size: 2.3vmin;
+}
+
+.add_page .submit {
+    width: 15vw;
+    height: 6vh;
+    margin: 0 auto;
+    display: block;
+    margin-top: 5vh;
+
+}
+
+.add_page .checkpoint {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 1vh;
+}
+
+.add_page .checkpoint input{
+    width: 48%;
+
+}
+
+#schedule_form {
+    /* transform: translateX(-100vw);  */
+}
+
+#task_form {
+    transform: translateX(100vw); 
+}
+
+
